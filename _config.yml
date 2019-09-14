@@ -24,7 +24,7 @@ github_username:  syue2705
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+theme: minima
 port: 3000
 host: 0.0.0.0
 plugins:
