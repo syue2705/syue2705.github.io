@@ -65,4 +65,4 @@ So far every problems that I have encountered have been solved either in Stackov
 Yes, I love the direction they are heading with Phoenix. Eventhough it is more complex than Rails, but I always feel the complexity is helping me to become a better developer, which is what I am looking for.
 
 ## 8. Would I recommend this to beginners?
-No, I would still recommend Rails. The reason is because of the introduction of context. It adds to another level of complexity that I think beginners would find it hard to grasp. Having said that, once they are familiar with Rails, I would have no problem in recommending Phoenix.
+No, I would still recommend Rails. The reason is because of the introduction of context. It adds to another level of complexity that I think beginners would find ddit hard to grasp. Having said that, once they are familiar with Rails, I would have no problem in recommending Phoenix.
