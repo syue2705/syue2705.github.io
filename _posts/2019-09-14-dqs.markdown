@@ -48,7 +48,7 @@ Check out the  system requirements before installing both components:
 - dqs_kb_operator: edit and execute project only. cannot toouch knowledge base at all. 
 
 Notes: Data Quality Client has to be installed on every desktop, while it can connect to a Data Quality Server on another machine. 
-    - 
+    
 # DQS Post Installation
 
 1. Granting specific DQS permissions to users based on their work profile. 
