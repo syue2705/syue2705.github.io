@@ -5,6 +5,46 @@ date:   2019-09-14 06:35:45 +0000
 categories: Microsoft
 ---
 
-# heading
-## heading 2
-#### heading 3
+# Introduction to Data Quality Service
+
+Data Quality Service (DQS) is a feature available in SQL Server 2016. It helps in handling data quality tasks such as profiling, correction, standardization and de-duplication. 
+
+DQS consists of two components:
+1. Data Quality Server (installed on top of SQL Database Engine)
+2. Data Quality Client (standalone application that connects to Data Quality Server)
+
+# DQS Requirements
+
+Check out the  system requirements before installing both components: 
+1. Data Quality Server: Minimum Memory 2GB,SQL Database Engine
+2. Data Quality Client: .NET Framework 4.0, Internet Explorer 6.0 SP1
+
+# DQS Installation
+
+1. Use the SQL Server Setup to install.  Go to Installation >  New SQL Server stand-alone installation or add features to an existing installation. 
+
+![alt text](C:\Users\syuhaida.ariffin\Desktop\blog\ok1)
+
+2. Click Next and stop at Feature Selection screen. 
+
+![alt text](C:\Users\syuhaida.ariffin\Desktop\blog\hjhj)
+
+3. Once installation completed, run the SQL Server 2016 Data Quality Server Installer. Once the installer starts, you will be prompted to enter a password for the database master key. This key will be used to encrypt the contents of the DQS databases. 
+
+![alt text](C:\Users\syuhaida.ariffin\Desktop\blog\ffff)
+
+4. This process will create 3 databases that are available in SSMS with the same instance. 
+
+![alt text](C:\Users\syuhaida.ariffin\Desktop\blog\asab)
+
+
+Data Quality Client has to be installed on every desktop, while connecting to a Data Quality Server on another machine. 
+    - 
+# DQS Post Installation
+
+1. Granting specific DQS permissions to users based on their work profile 
+
+2. Microsoft Office must be installed on the Data Quality Client computer if the source data is in an Excel file. 
+
+3. Important notes for Excel file:
+ - if 64-bit version is used, only Excel 2003 (.xls) is supported, the Excel 2007 and Excel 2010 (.xlsx) are not supported. Or else, save file to .csv or .xls. 
