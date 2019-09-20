@@ -35,7 +35,7 @@ Check out the  system requirements before installing both components:
 
 4. This process will create 3 databases that are available in SSMS with the same instance. 
 
-![alt text](C:\Users\syuhaida.ariffin\Desktop\blog\asab)
+![alt text](asab.PNG)
 
 
 Data Quality Client has to be installed on every desktop, while connecting to a Data Quality Server on another machine. 
