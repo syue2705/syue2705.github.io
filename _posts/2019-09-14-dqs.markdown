@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Data Quality Service"
-date:   2019-09-14 06:35:45 +0000
+date:   2019-09-20 06:35:45 +0000
 categories: Microsoft
 ---
 
@@ -23,26 +23,35 @@ Check out the  system requirements before installing both components:
 
 1. Use the SQL Server Setup to install.  Go to Installation >  New SQL Server stand-alone installation or add features to an existing installation. 
 
-![alt text](C:\Users\syuhaida.ariffin\Desktop\blog\ok1)
+![alt text](https://github.com/syue2705/syue2705.github.io/blob/master/ok1.PNG)
 
 2. Click Next and stop at Feature Selection screen. 
 
-![alt text](C:\Users\syuhaida.ariffin\Desktop\blog\hjhj)
+![alt text](https://github.com/syue2705/syue2705.github.io/blob/master/hjhj.PNG)
 
 3. Once installation completed, run the SQL Server 2016 Data Quality Server Installer. Once the installer starts, you will be prompted to enter a password for the database master key. This key will be used to encrypt the contents of the DQS databases. 
 
-![alt text](C:\Users\syuhaida.ariffin\Desktop\blog\ffff)
+![alt text](https://github.com/syue2705/syue2705.github.io/blob/master/ffff.PNG)
 
 4. This process will create 3 databases that are available in SSMS with the same instance. 
 
 ![alt text](https://github.com/syue2705/syue2705.github.io/blob/master/asab.PNG)
 
+- DQS_MAIN: contains published knowledge bases, stored procedures.
+- DQS_PROJECTS: contains data associated with data quality projects created in Data Quality Client. 
+- DQS_STAGING_DATA: as a staging area to copy data to perform DQS operations on.
 
-Data Quality Client has to be installed on every desktop, while connecting to a Data Quality Server on another machine. 
+5. The installation will also create DQS database roles in DQS_MAIN to grant DQS permissions:
+
+- dqs_administrators: can edit knowledge base, terminate activity, basically have all the power in DQS
+- dqs_kb_editor: only edit and execute knowledge base and project
+- dqs_kb_operator: edit and execute project only. cannot toouch knowledge base at all. 
+
+Notes: Data Quality Client has to be installed on every desktop, while it can connect to a Data Quality Server on another machine. 
     - 
 # DQS Post Installation
 
-1. Granting specific DQS permissions to users based on their work profile 
+1. Granting specific DQS permissions to users based on their work profile. 
 
 2. Microsoft Office must be installed on the Data Quality Client computer if the source data is in an Excel file. 
 
